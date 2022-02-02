@@ -20,5 +20,17 @@ class ViewController: UIViewController {
         TextLabel.textColor = UIColor.orange
     }
     
+    @IBOutlet var Background: UIView!
+    @IBAction func BackgroundButtonClicked(_ sender: Any) {
+        Background.backgroundColor = UIColor.magenta
+    }
+    
+    
+    @IBOutlet weak var TextLabel2: UILabel!
+    @IBAction func TextButtonClicked(_ sender: Any) {
+        TextLabel2.text = "Bye!"
+    }
+    
+    
 }
 

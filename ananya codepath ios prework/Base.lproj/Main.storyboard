@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6E8-cT-YPB">
-                                <rect key="frame" x="87" y="120" width="240" height="128"/>
+                                <rect key="frame" x="87" y="44" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hello" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mZ9-Hq-Hdk">
@@ -33,16 +33,26 @@
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemFillColor"/>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZsT-M9-9Vw">
-                                <rect key="frame" x="138" y="400" width="139" height="96"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X0j-mq-Y03">
+                                <rect key="frame" x="104" y="312" width="207" height="104"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="tinted" title="Change test color">
+                                <buttonConfiguration key="configuration" style="gray" title="Change background color"/>
+                                <connections>
+                                    <action selector="BackgroundButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gAY-y0-soD"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZsT-M9-9Vw">
+                                <rect key="frame" x="104" y="208" width="207" height="96"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="Change text color and string">
                                     <color key="baseForegroundColor" systemColor="systemIndigoColor"/>
                                     <color key="baseBackgroundColor" systemColor="labelColor"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="ButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eaJ-qy-iID"/>
+                                    <action selector="TextButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LlG-dV-Fb6"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -50,7 +60,9 @@
                         <color key="backgroundColor" red="0.78660407741813476" green="0.86087566614151001" blue="0.65692833622109792" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
                     <connections>
+                        <outlet property="Background" destination="8bC-Xf-vdC" id="h5w-d7-aTS"/>
                         <outlet property="TextLabel" destination="mZ9-Hq-Hdk" id="hW2-sp-NYH"/>
+                        <outlet property="TextLabel2" destination="mZ9-Hq-Hdk" id="B91-ub-JtE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
