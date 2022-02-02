@@ -1,7 +1,7 @@
 ## Hello World - Ananya iOS Prework 
 
 ### App Description
-`TODO://` Add app description
+This app allows the user to see custom text, background and tap different buttons to change the text color, text string and background color. Basic app implementation completed using Swift.
 
 ### App Walk-though
 
